@@ -1,0 +1,113 @@
+.card-section {
+    background-color: #f1f0f0;
+    padding: 50px 0;
+}
+
+.img-card img {
+    width: 100%;
+    height: 310px;
+    border-radius: 8px 8px 0 0;
+}
+
+.card-wrap {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 25px 12%;
+    justify-content: space-between;
+    /* background-image: url('./png-transparent-simple-white-honeycomb-pattern-background-white-polygon-honeycomb-thumbnail.png');
+    background-size: inherit;
+    background-repeat: repeat;
+    background-position: revert; */
+}
+
+.first-card-wrap {
+    width: 350px;
+    /* box-shadow: 1px 1px 14px 5px lightgrey; */
+    padding-bottom: 22px;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: .2s all ease-in-out;
+}
+
+.first-card-wrap:hover{
+    box-shadow: 1px 1px 14px 5px lightgrey;
+    transition: .2s all ease-in-out;
+}
+
+.wrap-text-area {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-heading {
+    line-height: 2;
+    font-size: 24px;
+    font-weight: 600;
+    color: #222931;
+}
+
+.card-para {
+    color: #5f656d;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 28px;
+}
+
+.card-anchr a {
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid #81d658ed;
+    background-color: #81d658ed;
+    color: #fff;
+    margin-right: 8px;
+    font-weight: 700;
+    transition: all .3s ease-in-out;
+    border-radius: 5px;
+}
+
+.card-anchr a:hover {
+    background-color: rgba(0, 0, 0, 0.596);
+    border: 1px solid rgba(0, 0, 0, 0.596);
+}
+
+
+@media screen and (max-width:1024px){
+    .card-wrap {
+        padding: 25px 10px;
+        gap: 25px;
+        margin: 0 10px;
+    }
+
+    .first-card-wrap {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:768px){
+    .card-wrap {
+        flex-direction: column;
+    }
+
+    .first-card-wrap {
+        width: 70%;
+        height: 580px;
+    }
+
+    .img-card img {
+        height: 350px;
+        margin-bottom: 20px;
+    }
+
+    .card-para {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:426px){
+    .first-card-wrap {
+        width: 90%;
+        height: 615px;
+        margin: 0 auto;
+    }
+}

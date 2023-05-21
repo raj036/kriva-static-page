@@ -1,0 +1,138 @@
+.wrap-header-kriva {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 12%;
+}
+
+.header-kriva {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: #fff;
+}
+
+.navbar-header-kriva li {
+    list-style: none;
+}
+
+.navbar-header-kriva {
+    display: flex;
+    gap: 54px;
+}
+
+.navbar-header-kriva li a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+/* mobile view sidebar */
+
+
+.navigation {
+    display: none;
+}
+
+.navbar {
+    background-color: #fff;
+    height: 59px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.menu-bars {
+    margin-right: 10px;
+    font-size: 20px;
+    background: none;
+}
+
+.nav-menu {
+    background-color: #fff;
+    display: flex;
+    width: 250px;
+    height: 100vh;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    transition: .4s all ease-in-out;
+    z-index: 9999;
+}
+
+.nav-menu.active {
+    right: 0;
+    transition: .4s all ease-in-out;
+    z-index: 9999;
+}
+
+.nav-menu-items {
+    width: 100%;
+    z-index: 9999;
+}
+
+.nav-menu-items li {
+    list-style: none;
+}
+
+.navbar-toggle {
+    background-color: #fff;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav-menu-items li {
+    list-style: none;
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+.nav-menu-items li a {
+    text-decoration: none;
+}
+
+
+@media screen and (max-width:1024px) {
+    .navbar-header-kriva {
+        display: none;
+        position: relative;
+    }
+
+    h2.logo-kc {
+        font-size: 20px;
+    }
+
+    .header-kriva {
+        display: none;
+    }
+
+    .mob-nav {
+        display: block;
+        position: fixed;
+        width: 100%;
+        z-index: 9999;
+    }
+
+    .wrap-header-kriva {
+        padding: 0px 6%;
+    }
+
+}
+
+@media screen and (max-width:768px){
+ 
+}
+
+@media screen and (max-width:426px) {
+   
+
+    .menu-nav {
+        width: 64%;
+    }
+}
